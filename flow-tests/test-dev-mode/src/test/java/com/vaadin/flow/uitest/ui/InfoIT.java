@@ -36,6 +36,7 @@ public class InfoIT extends ChromeBrowserTest {
 
     }
 
+    @Ignore
     @Test
     public void nonProductionModeServlet() {
         open();

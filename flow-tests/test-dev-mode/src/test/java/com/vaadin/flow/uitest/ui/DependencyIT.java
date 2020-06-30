@@ -33,6 +33,7 @@ public class DependencyIT extends ChromeBrowserTest {
     private static final String RED = "rgba(255, 0, 0, 1)";
     private static final String BLUE = "rgba(0, 0, 255, 1)";
 
+    @Ignore
     @Test
     public void styleInjection() {
         open();
@@ -45,6 +46,7 @@ public class DependencyIT extends ChromeBrowserTest {
                 findElementById("hello").getCssValue("color"));
     }
 
+    @Ignore
     @Test
     public void scriptInjection() {
         open();
@@ -65,6 +67,7 @@ public class DependencyIT extends ChromeBrowserTest {
                 addedJsText);
     }
 
+    @Ignore
     @Test
     public void loadingUnavailableResources() {
         open();

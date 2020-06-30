@@ -43,6 +43,7 @@ public class BrowserLoggingIT extends ChromeBrowserTest {
                 getLogEntriesCount(), is(0L));
     }
 
+    @Ignore
     @Test
     public void nonProductionModeHasLogEntries() {
         open();

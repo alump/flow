@@ -16,6 +16,7 @@
 package com.vaadin.flow.uitest.ui.template;
 
 import org.junit.Assert;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -26,6 +27,7 @@ import com.vaadin.testbench.TestBenchElement;
 
 public class AttachExistingElementByIdIT extends ChromeBrowserTest {
 
+    @Ignore
     @Test
     public void elementsAreBoundOnTheServerSide() {
         open();

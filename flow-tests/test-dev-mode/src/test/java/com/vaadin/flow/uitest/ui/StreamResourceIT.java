@@ -27,6 +27,7 @@ import java.util.stream.Collectors;
 import org.apache.commons.io.FilenameUtils;
 import org.apache.commons.io.IOUtils;
 import org.junit.Assert;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -36,6 +37,7 @@ import com.vaadin.flow.testutil.ChromeBrowserTest;
 
 public class StreamResourceIT extends ChromeBrowserTest {
 
+    @Ignore
     @Test
     public void getDynamicVaadinResource() throws IOException {
         open();
@@ -43,6 +45,7 @@ public class StreamResourceIT extends ChromeBrowserTest {
         assertDownloadedContent("link", "file%20name");
     }
 
+    @Ignore
     @Test
     public void getDynamicVaadinPlusResource() throws IOException {
         open();
@@ -50,6 +53,7 @@ public class StreamResourceIT extends ChromeBrowserTest {
         assertDownloadedContent("plus-link", "file%2B.jpg");
     }
 
+    @Ignore
     @Test
     public void detact_attachALink_getDynamicVaadinResource()
             throws IOException {

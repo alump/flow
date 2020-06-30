@@ -17,6 +17,7 @@ package com.vaadin.flow.uitest.ui;
 
 import org.hamcrest.CoreMatchers;
 import org.junit.Assert;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -25,6 +26,7 @@ import com.vaadin.flow.testutil.ChromeBrowserTest;
 
 public class ExceptionStacktraceIT extends ChromeBrowserTest {
 
+    @Ignore
     @Test
     public void loggerAbsenceWarningAndStacktrace() {
         open();

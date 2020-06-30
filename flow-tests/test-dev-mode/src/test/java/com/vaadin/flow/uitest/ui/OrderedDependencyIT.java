@@ -19,6 +19,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.junit.Assert;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -29,6 +30,7 @@ public class OrderedDependencyIT extends ChromeBrowserTest {
 
     private static final String BLUE = "rgba(0, 0, 255, 1)";
 
+    @Ignore
     @Test
     public void inheritedStyleInjection() {
         open();
@@ -38,6 +40,7 @@ public class OrderedDependencyIT extends ChromeBrowserTest {
                 findElementById("component").getCssValue("color"));
     }
 
+    @Ignore
     @Test
     public void inheritedModuleInjection() {
         open();
@@ -51,6 +54,7 @@ public class OrderedDependencyIT extends ChromeBrowserTest {
                 messages.get(index + 1));
     }
 
+    @Ignore
     @Test
     public void inheritedScriptInjection() {
         open();

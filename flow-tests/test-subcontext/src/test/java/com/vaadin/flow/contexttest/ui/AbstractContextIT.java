@@ -1,6 +1,7 @@
 package com.vaadin.flow.contexttest.ui;
 
 import org.junit.Assert;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -23,6 +24,7 @@ public abstract class AbstractContextIT extends ChromeBrowserTest {
         return JETTY_CONTEXT + getAppContext();
     }
 
+    @Ignore
     @Test
     public void testStyleInjection() {
         open();
@@ -30,6 +32,7 @@ public abstract class AbstractContextIT extends ChromeBrowserTest {
         styleInjection();
     }
 
+    @Ignore
     @Test
     public void testScriptInjection() {
         open();

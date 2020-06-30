@@ -28,6 +28,7 @@ public class ClientSideExceptionHandlingIT extends ChromeBrowserTest {
 
     private static final By ERROR_LOCATOR = By.className("v-system-error");
 
+    @Ignore
     @Test
     public void developmentModeExceptions() {
         open();
